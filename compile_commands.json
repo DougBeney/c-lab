@@ -1,0 +1,13 @@
+[
+    {
+        "arguments": [
+            "cc", 
+            "-c", 
+            "-o", 
+            "app", 
+            "main.c"
+        ], 
+        "directory": "/home/doug/Documents/Coding/c-lab", 
+        "file": "main.c"
+    }
+]
