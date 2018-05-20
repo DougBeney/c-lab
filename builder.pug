@@ -1,0 +1,30 @@
+interface
+	object.GtkWindow#window
+		property(name="visible") True
+		property(name="title") My App
+		property(name="border-width") 10
+		child
+			object.GtkGrid#grid
+				property(name="visible") True
+				child
+					object.GtkButton#button1
+						property(name="visible") True
+						property(name="label") Button 1
+					packing
+						property(name="left-attach") 0
+						property(name="top-attach") 0
+				child
+					object.GtkButton#button2
+						property(name="visible") True
+						property(name="label") Button 2
+					packing
+						property(name="left-attach") 1
+						property(name="top-attach") 0
+				child
+					object.GtkButton#quit
+						property(name="visible") True
+						property(name="label") Quit
+					packing
+						property(name="left-attach") 0
+						property(name="top-attach") 1
+						property(name="width") 2
