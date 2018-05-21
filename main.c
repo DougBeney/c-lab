@@ -1,37 +1,27 @@
-#include <gtk/gtk.h>
-
-static void print_hello(GtkWidget *widget, gpointer data) {
-	g_print("Hello world from g_print\n");
-}
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char **argv) {
-	GtkBuilder *builder;
-	GObject *window;
-	GObject *button;
-	GError *error = NULL;
+	int i, howMany;
+	int total;
+	float average = 0.0;
+	int * pointsArray;
 
-	gtk_init(&argc, &argv);
+	printf("how many numbers do u want to avg?\n");
+	scanf("%d", &howMany);
 
-	builder = gtk_builder_new();
-	if (gtk_builder_add_from_file(builder, "builder.ui", &error) == 0) {
-		g_printerr("error loading UI file: %s\n", error->message);
-		g_clear_error(&error);
-		return 1;
+	pointsArray = (int *) malloc(howMany * sizeof(int));
+
+	for(i=0; i < howMany; i++) {
+		scanf("%d", &pointsArray[i]);
+		total += pointsArray[i];
 	}
 
-	window = gtk_builder_get_object(builder, "window");
-	g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+	average = (float)total / (float)howMany;
+	printf("avg is %f", average);
 
-	button = gtk_builder_get_object(builder, "button1");
-	g_signal_connect(button, "clicked", G_CALLBACK(print_hello), NULL);
-
-	button = gtk_builder_get_object(builder, "button2");
-	g_signal_connect(button, "clicked", G_CALLBACK(print_hello), NULL);
-
-	button = gtk_builder_get_object(builder, "quit");
-	g_signal_connect(button, "clicked", G_CALLBACK(gtk_main_quit), NULL);
-
-	gtk_main();
+	free(pointsArray);
 
 	return 0;
 }
+
