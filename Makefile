@@ -1,5 +1,5 @@
 flags = `pkg-config gtk+-3.0 --cflags --libs`
-all: ui compile run
+all: compile run
 
 ui:
 	pug builder.pug
