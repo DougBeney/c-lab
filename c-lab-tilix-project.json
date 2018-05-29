@@ -1,0 +1,51 @@
+{
+    "child": {
+        "child1": {
+            "child1": {
+                "directory": "\/home\/doug\/Documents\/Coding\/c-lab",
+                "height": 913,
+                "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "type": "Terminal",
+                "uuid": "92e6af51-921e-496b-88b4-e32ded7077eb",
+                "width": 800
+            },
+            "child2": {
+                "directory": "\/home\/doug\/Documents\/Coding\/c-lab",
+                "height": 913,
+                "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "readOnly": false,
+                "synchronizedInput": true,
+                "type": "Terminal",
+                "uuid": "9e720174-f6e1-4ec7-a2e1-0b114ead9267",
+                "width": 799
+            },
+            "orientation": 0,
+            "position": 50,
+            "ratio": 0.5,
+            "type": "Paned"
+        },
+        "child2": {
+            "directory": "\/home\/doug\/Documents\/Coding\/c-lab",
+            "height": 212,
+            "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "type": "Terminal",
+            "uuid": "f23a1e67-ee14-4e1b-a2de-9c2b236f0fe2",
+            "width": 1600
+        },
+        "orientation": 1,
+        "position": 81,
+        "ratio": 0.810834813499111906,
+        "type": "Paned"
+    },
+    "height": 1126,
+    "name": "Default",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "ce8eba40-f7d5-4ab2-8f73-74b4397d5f6b",
+    "version": "1.0",
+    "width": 1600
+}
