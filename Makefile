@@ -1,8 +1,8 @@
-flags = `pkg-config gtk+-3.0 --cflags --libs`
-all: compile run
+all: compile
 
 compile:
-	@gcc src/main.c src/definitions.c -o app $(flags)
+	@gcc src/client.c
+	@gcc src/server.c
 
 run:
 	@./app
